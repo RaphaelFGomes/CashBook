@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.book.cash.cashbook.NewPostActivity">
+
+    <!-- Patient name -->
+    <TextView
+        android:id="@+id/patient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/field_patient_name" />
+
+    <EditText
+        android:id="@+id/field_patient_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/patient_name"
+        android:layout_alignBaseline="@+id/patient_name"
+        android:hint="@string/enter_patient_name" />
+
+    <!-- Patient CPF -->
+    <TextView
+        android:id="@+id/patient_cpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/field_patient_name"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/field_patient_cpf" />
+
+    <EditText
+        android:id="@+id/field_patient_cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/patient_cpf"
+        android:layout_alignBaseline="@+id/patient_cpf"
+        android:hint="@string/enter_patient_cpf" />
+
+    <!-- Receipt date -->
+    <TextView
+        android:id="@+id/receipt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/field_patient_cpf"
+        android:layout_marginLeft="5dp"
+        android:text="@string/field_receipt_date" />
+
+    <EditText
+        android:id="@+id/field_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/receipt_date"
+        android:layout_alignBaseline="@+id/receipt_date"
+        android:hint="@string/enter_receipt_date" />
+
+    <!-- Receipt value -->
+    <TextView
+        android:id="@+id/receipt_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/field_date"
+        android:layout_marginLeft="5dp"
+        android:text="@string/field_receipt_value" />
+
+    <EditText
+        android:id="@+id/field_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/receipt_value"
+        android:layout_alignBaseline="@+id/receipt_value"
+        android:hint="@string/enter_receipt_value"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_submit_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_navigation_check_24"/>
+
+</RelativeLayout>
